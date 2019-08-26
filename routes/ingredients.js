@@ -20,6 +20,18 @@ router.get('/:id', (req, res) => {
         .catch(err => res.status(400).json(`An Error Occurred With the Following: ${err}`));
 });
 
+// Route To Post An Ingredient
+router.post('/', (req, res) => {
+    const newIngredient = new Ingredient({
+        ingredient: req.body.ingredient,
+        weight: req.body.weight,
+        expires: req.body.expires,
+        image: req.body.image
+    });
+
+    newIngredient.save().then(ingredient => res.send(ingredient));
+});
+
 // Route To Update An Ingredient
 router.post('/update/:id', (req, res) => {
     Ingredient.findById(req.params.id).then(ingredients => {
