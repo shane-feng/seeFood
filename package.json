@@ -1,28 +1,33 @@
 {
-  "name": "seefood",
-  "version": "1.0.0",
-  "description": "Manages food ingredients",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/shaneF89/seeFood.git"
-  },
-  "author": "Shane Feng",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/shaneF89/seeFood/issues"
-  },
-  "homepage": "https://github.com/shaneF89/seeFood#readme",
-  "devDependencies": {
-    "body-parser": "^1.19.0",
-    "concurrently": "^4.1.2",
-    "cors": "^2.8.5",
-    "dotenv": "^8.1.0",
-    "express": "^4.17.1",
-    "mongoose": "^5.6.11",
-    "nodemon": "^1.19.1"
-  }
+    "name": "seefood",
+    "version": "1.0.0",
+    "description": "Manages food ingredients",
+    "main": "server.js",
+    "scripts": {
+        "client-install": "npm install -prefix client",
+        "start": "node server.js",
+        "server": "nodemon server.js",
+        "client": "npm start -prefix client",
+        "dev": "concurrently \"npm run server\" \"npm run client\"",
+        "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install -prefix client && npm run build--prefix client"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/shaneF89/seeFood.git"
+    },
+    "author": "Shane Feng",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/shaneF89/seeFood/issues"
+    },
+    "homepage": "https://github.com/shaneF89/seeFood#readme",
+    "devDependencies": {
+        "body-parser": "^1.19.0",
+        "concurrently": "^4.1.2",
+        "cors": "^2.8.5",
+        "dotenv": "^8.1.0",
+        "express": "^4.17.1",
+        "mongoose": "^5.6.11",
+        "nodemon": "^1.19.1"
+    }
 }
