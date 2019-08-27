@@ -19,7 +19,7 @@ app.use(bodyParser.json({ limit: '50mb' }));
 const uri = process.env.ATLAS_URI;
 mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true });
 
-// Connect to MongoDB
+// Connect to MongoDB/Database
 const connection = mongoose.connection;
 connection.once('open', () => {
     console.log('Connected to MongoDB');
