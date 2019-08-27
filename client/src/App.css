@@ -1,0 +1,34 @@
+.navbar {
+    background-color: #008fb3 !important;
+}
+.navbar-brand {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 35pt;
+    color: white;
+}
+
+.nav-link {
+    color: white !important;
+    font-size: 15pt;
+}
+
+.nav-link:hover {
+    font-size: 17pt;
+    color: #ffcc00 !important;
+}
+
+.navbar-toggler {
+    background-color: #008fb3 !important;
+    border-color: none !important;
+    color: white;
+    font-size: 30px;
+}
+
+.navbar-toggler:hover {
+    border: none !important;
+}
+
+.container {
+    width: 100% !important;
+    max-width: 2000px;
+}
