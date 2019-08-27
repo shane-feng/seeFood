@@ -1,22 +1,28 @@
+/* Navbar */
 .navbar {
     background-color: #008fb3 !important;
 }
+
+/* Navbar Logo */
 .navbar-brand {
     font-family: 'Berkshire Swash', cursive;
     font-size: 35pt;
     color: white;
 }
 
+/* Navbar Links */
 .nav-link {
     color: white !important;
     font-size: 15pt;
 }
 
+/* Navbar Links On Hover */
 .nav-link:hover {
     font-size: 17pt;
     color: #ffcc00 !important;
 }
 
+/* Navbar Hamburger Menu */
 .navbar-toggler {
     background-color: #008fb3 !important;
     border-color: none !important;
@@ -24,11 +30,82 @@
     font-size: 30px;
 }
 
+/* Navbar Hamburger Menu On Hover */
 .navbar-toggler:hover {
     border: none !important;
 }
 
+/* Resetting Max Width For Reactstrap Container */
 .container {
     width: 100% !important;
     max-width: 2000px;
+}
+
+/* Individual Ingredients Container */
+.ingredients {
+    width: 230px;
+    height: 400px;
+    margin-bottom: 2rem;
+}
+
+/* Ingredient Body Container */
+.card-body {
+    padding: 0 !important;
+}
+
+/* Ingredient Picture */
+.pics {
+    width: 198px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Ingredient Name */
+.card-title {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Ingredient Expiry Date */
+.expires {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px !important;
+    text-align: center;
+    color: white;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+/* Edit Button */
+.editButton {
+    width: 94px;
+}
+
+/* Delete Button */
+.deleteButton {
+    width: 94px;
+}
+
+hr {
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+}
+
+/* All Button Colors */
+button {
+    background-color: #00b8e6 !important;
+    border: none !important;
+}
+
+/* All Button Hover Effects */
+button:hover {
+    background-color: #99ebff !important;
+    color: black !important;
+}
+
+/* Search Bar */
+.searchBar {
+    width: 230px !important;
+    font-size: 15pt;
 }

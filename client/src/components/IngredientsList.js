@@ -5,7 +5,7 @@ import '../App.css';
 
 import Ingredient from './Ingredient';
 
-export class IngredientsList extends Component {
+class IngredientsList extends Component {
     state = {
         ingredients: [],
         search: '',
@@ -73,6 +73,14 @@ export class IngredientsList extends Component {
                             onChange={this.handleChange}
                         />
                     </Form>
+                    <Row className="justify-content-center">
+                        <Ingredient
+                            ingredients={this.state.search !== '' ? filteredIngredients : this.state.ingredients}
+                            deleteIngredient={this.deleteIngredient}
+                            editIngredient={this.editIngredient}
+                            modal={this.state.modal}
+                        />
+                    </Row>
                 </Container>
             </div>
         );

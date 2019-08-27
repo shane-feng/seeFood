@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Container, Navbar, NavbarBrand, NavbarToggler, Collapse, Nav, NavItem, NavLink } from 'reactstrap';
 import '../App.css';
 
-export class AppNavbar extends Component {
+class AppNavbar extends Component {
     state = {
         isOpen: false
     };
