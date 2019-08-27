@@ -4,6 +4,7 @@ import { Container, Row, Form, Input } from 'reactstrap';
 import '../App.css';
 
 import Ingredient from './Ingredient';
+import EditModal from './EditModal';
 
 class IngredientsList extends Component {
     state = {
@@ -29,7 +30,7 @@ class IngredientsList extends Component {
     editIngredient = item => {
         this.setState({
             modal: !this.state.modal,
-            editingItem: item
+            itemToEdit: item
         });
     };
 
@@ -81,6 +82,15 @@ class IngredientsList extends Component {
                             modal={this.state.modal}
                         />
                     </Row>
+                    <EditModal
+                        ingredient={this.state.ingredient}
+                        weight={this.state.weight}
+                        expires={this.state.expires}
+                        image={this.state.image}
+                        modal={this.state.modal}
+                        editIngredient={this.editIngredient}
+                        itemToEdit={this.state.itemToEdit}
+                    />
                 </Container>
             </div>
         );

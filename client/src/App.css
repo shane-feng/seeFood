@@ -109,3 +109,15 @@ button:hover {
     width: 230px !important;
     font-size: 15pt;
 }
+
+/* Edit Modal Header */
+.modal-header {
+    background-color: #008fb3 !important;
+    color: white;
+}
+
+/* Edit Modal Close Button */
+.close {
+    background-color: transparent !important;
+    height: 63px;
+}
