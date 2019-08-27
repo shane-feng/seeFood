@@ -7,7 +7,7 @@ const Ingredient = require('../models/IngredientModel');
 // Route To Get All Ingredients
 router.get('/', (req, res) => {
     Ingredient.find()
-        .sort({ expires: -1 })
+        .sort({ expires: 1 })
         .then(item => res.json(item))
         .catch(err => res.status(400).json(`An Error Occurred With the Following: ${err}`));
 });
@@ -15,7 +15,6 @@ router.get('/', (req, res) => {
 // Route To Get A Single Ingredient
 router.get('/:id', (req, res) => {
     Ingredient.findById(req.params.id)
-        .sort({ date: -1 })
         .then(ingredient => res.json(ingredient))
         .catch(err => res.status(400).json(`An Error Occurred With the Following: ${err}`));
 });
