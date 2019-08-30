@@ -17,7 +17,7 @@ class IngredientsList extends Component {
     // Get Ingredients From DB
     componentDidMount() {
         axios
-            .get('http://localhost:5000/ingredients/')
+            .get('https://seefood2019.herokuapp.com/ingredients/')
             .then(res => {
                 this.setState({ ingredients: res.data });
             })
@@ -37,7 +37,7 @@ class IngredientsList extends Component {
     // Delete Ingredient
     deleteIngredient = id => {
         axios
-            .delete('http://localhost:5000/ingredients/' + id)
+            .delete('https://seefood2019.herokuapp.com/ingredients/' + id)
             .then(res => console.log(`Item with ID ${id} deleted!`))
             .catch(err => console.log(err));
         this.setState({

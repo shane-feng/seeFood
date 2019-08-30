@@ -51,7 +51,7 @@ class EditModal extends Component {
         };
 
         axios
-            .post('http://localhost:5000/ingredients/update/' + this.props.itemToEdit._id, item)
+            .post('https://seefood2019.herokuapp.com/ingredients/update/' + this.props.itemToEdit._id, item)
             .catch(err => console.log(err));
 
         setTimeout(() => {
