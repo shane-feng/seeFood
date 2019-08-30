@@ -9,6 +9,11 @@ class Ingredient extends Component {
         return new Date(item.expires).getTime() <= Date.now() ? 'EXPIRED' : item.expires.substr(0, 10);
     };
 
+    // Get Added Date
+    getAddedDate = item => {
+        return item.createdAt.toString().substr(0, 10);
+    };
+
     // Check If Ingredient Is Expired
     healthy = item => {
         return new Date(item.expires).getTime() <= Date.now() ? false : true;
@@ -64,7 +69,7 @@ class Ingredient extends Component {
                                 <CardTitle className="boughtOn align-middle">
                                     <p className="pt-1">
                                         <span>Added: </span>
-                                        {item.date}
+                                        {this.getAddedDate(item)}
                                     </p>
                                 </CardTitle>
                             </CardBody>

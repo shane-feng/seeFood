@@ -57,7 +57,7 @@
 /* Ingredient Picture */
 .pics {
     width: 198px;
-    height: 200px;
+    height: 200px !important;
     object-fit: cover;
 }
 

@@ -47,14 +47,13 @@ class AddModal extends Component {
             ingredient: this.state.ingredient,
             weight: this.state.weight,
             expires: this.state.expires,
-            image: this.state.image,
-            date: this.state.date
+            image: this.state.image
         };
 
         axios.post('https://seefood2019.herokuapp.com/ingredients/', item).catch(err => console.log(err));
+        // axios.post('http://localhost:5000/ingredients/', item).catch(err => console.log(err));
 
         setTimeout(() => {
-            alert(`${this.state.ingredient} has been successfully added!`);
             window.location = '/';
         }, 1000);
     };

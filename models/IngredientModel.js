@@ -18,6 +18,9 @@ const IngredientSchema = new Schema(
         },
         image: {
             type: String
+        },
+        date: {
+            type: Date
         }
     },
     {
