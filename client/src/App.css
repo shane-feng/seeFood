@@ -87,11 +87,6 @@
     width: 94px;
 }
 
-hr {
-    margin-top: 0.1rem;
-    margin-bottom: 0.1rem;
-}
-
 /* All Button Colors */
 button {
     background-color: #00b8e6 !important;
@@ -120,4 +115,56 @@ button:hover {
 .close {
     background-color: transparent !important;
     height: 63px;
+}
+
+/* About Us Text Container */
+.jumbotron {
+    font-family: 'Sarala', sans-serif;
+    width: 100% !important;
+    height: 800px;
+    background-color: #ffffcc;
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    bottom: 0;
+}
+
+/* About Us Header */
+.lead {
+    font-size: 20pt;
+}
+
+/* About Us Details */
+.details {
+    padding-top: 60px;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 13pt;
+}
+
+/* About Us Footer */
+.footer {
+    width: 100%;
+    background-color: #008fb3;
+    height: 106px;
+    bottom: 0;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    justify-content: center;
+}
+
+/* About Us Footer Icons */
+.footer-icons {
+    width: 90px;
+    height: 90px;
+    padding-top: 15px;
+}
+
+/* About Us Footer Icons On Hover */
+.footer-icons:hover {
+    width: 95px;
+    height: 95px;
+    filter: invert(90%);
 }
