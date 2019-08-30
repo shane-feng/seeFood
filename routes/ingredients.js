@@ -5,7 +5,7 @@ const router = express.Router();
 const Ingredient = require('../models/IngredientModel');
 
 // Route To Get All Ingredients
-router.get('https://seefood2019.herokuapp.com/ingredients/', (req, res) => {
+router.get('https://seefood2019.herokuapp.com/', (req, res) => {
     Ingredient.find()
         .sort({ expires: 1 })
         .then(item => res.json(item))
