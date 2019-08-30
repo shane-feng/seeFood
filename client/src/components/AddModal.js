@@ -51,7 +51,7 @@ class AddModal extends Component {
             date: this.state.date
         };
 
-        axios.post('https://seefood2019.herokuapp.com/ingredients', item).catch(err => console.log(err));
+        axios.post('https://seefood2019.herokuapp.com/ingredients/', item).catch(err => console.log(err));
 
         setTimeout(() => {
             alert(`${this.state.ingredient} has been successfully added!`);
