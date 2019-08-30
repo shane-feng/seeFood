@@ -36,7 +36,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 // Use Routes
-app.use('/ingredients', require('./routes/ingredients'));
+app.use('https://seefood2019.herokuapp.com/ingredients/', require('./routes/ingredients'));
 
 app.listen(port, () => {
     console.log(`Server Running On Port ${port}!`);
