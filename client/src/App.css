@@ -35,16 +35,17 @@
     border: none !important;
 }
 
-/* Resetting Max Width For Reactstrap Container */
+/* Reconfig Reactstrap Container */
 .container {
     width: 100% !important;
+    padding: 0;
     max-width: 2000px;
 }
 
 /* Individual Ingredients Container */
 .ingredients {
     width: 230px;
-    height: 400px;
+    height: 445px;
     margin-bottom: 2rem;
 }
 
@@ -58,6 +59,11 @@
     width: 198px;
     height: 200px;
     object-fit: cover;
+}
+
+hr {
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
 }
 
 /* Ingredient Name */
@@ -91,12 +97,27 @@
 button {
     background-color: #00b8e6 !important;
     border: none !important;
+    box-shadow: 1px 1px grey;
 }
 
 /* All Button Hover Effects */
 button:hover {
     background-color: #99ebff !important;
     color: black !important;
+}
+
+/* Ingredient Added On Date */
+.boughtOn {
+    height: 36px;
+    background-color: #b3f0ff;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 1px 1px grey;
+}
+
+/* Ingredient Added On Date Label*/
+.boughtOn span {
+    font-weight: bold;
 }
 
 /* Search Bar */
@@ -114,7 +135,7 @@ button:hover {
 /* Edit Modal Close Button */
 .close {
     background-color: transparent !important;
-    height: 63px;
+    height: 60px;
 }
 
 /* About Us Text Container */

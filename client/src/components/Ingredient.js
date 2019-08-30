@@ -61,6 +61,12 @@ class Ingredient extends Component {
                                 >
                                     Delete
                                 </Button>
+                                <CardTitle className="boughtOn align-middle">
+                                    <p className="pt-1">
+                                        <span>Added: </span>
+                                        {item.date.substr(0, 10)}
+                                    </p>
+                                </CardTitle>
                             </CardBody>
                         </Card>
                     </Col>
