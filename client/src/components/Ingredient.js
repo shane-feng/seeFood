@@ -64,7 +64,7 @@ class Ingredient extends Component {
                                 <CardTitle className="boughtOn align-middle">
                                     <p className="pt-1">
                                         <span>Added: </span>
-                                        {item.date.substr(0, 10)}
+                                        {item.date}
                                     </p>
                                 </CardTitle>
                             </CardBody>
