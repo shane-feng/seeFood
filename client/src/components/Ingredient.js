@@ -6,7 +6,7 @@ import '../App.css';
 class Ingredient extends Component {
     // Get Expiration Date In Month/Date/Year Format
     getExpiryDate = item => {
-        return new Date(item.expires).getTime() <= Date.now() ? 'EXPIRED' : item.expires.substr(0, 10);
+        return new Date(item.expires).getTime() <= Date.now() ? 'EXPIRED' : item.expires.substring(0, 10);
     };
 
     // Check If Ingredient Is Expired
@@ -64,7 +64,7 @@ class Ingredient extends Component {
                                 <CardTitle className="boughtOn align-middle">
                                     <p className="pt-1">
                                         <span>Added: </span>
-                                        {item.date.substr(0, 10)}
+                                        {item.date.substring(0, 10)}
                                     </p>
                                 </CardTitle>
                             </CardBody>
