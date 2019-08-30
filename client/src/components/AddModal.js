@@ -55,7 +55,7 @@ class AddModal extends Component {
 
         setTimeout(() => {
             window.location = '/';
-        }, 1000);
+        }, 2000);
     };
 
     render() {
