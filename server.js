@@ -25,6 +25,9 @@ connection.once('open', () => {
     console.log('Connected to MongoDB');
 });
 
+// Use Routes
+app.use('/ingredients', require('./routes/ingredients'));
+
 // Static Files When In Production
 if (process.env.NODE_ENV === 'production') {
     // Set Static Folder
@@ -34,9 +37,6 @@ if (process.env.NODE_ENV === 'production') {
         res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
     });
 }
-
-// Use Routes
-app.use('/ingredients', require('./routes/ingredients'));
 
 app.listen(port, () => {
     console.log(`Server Running On Port ${port}!`);
