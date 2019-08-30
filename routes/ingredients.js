@@ -5,7 +5,7 @@ const router = express.Router();
 const Ingredient = require('../models/IngredientModel');
 
 // Route To Get All Ingredients
-router.get('https://seefood2019.herokuapp.com/ingredients', (req, res) => {
+router.get('/', (req, res) => {
     Ingredient.find()
         .sort({ expires: 1 })
         .then(item => res.json(item))
@@ -13,7 +13,7 @@ router.get('https://seefood2019.herokuapp.com/ingredients', (req, res) => {
 });
 
 // Route To Get A Single Ingredient
-router.get('https://seefood2019.herokuapp.com/ingredients/:id', (req, res) => {
+router.get('/:id', (req, res) => {
     Ingredient.findById(req.params.id)
         .then(ingredient => res.json(ingredient))
         .catch(err => res.status(400).json(`An Error Occurred With the Following: ${err}`));
@@ -32,7 +32,7 @@ router.post('/', (req, res) => {
 });
 
 // Route To Update An Ingredient
-router.post('https://seefood2019.herokuapp.com/ingredients/update/:id', (req, res) => {
+router.post('/update/:id', (req, res) => {
     Ingredient.findById(req.params.id).then(ingredients => {
         (ingredients.ingredient = req.body.ingredient),
             (ingredients.weight = req.body.weight),
@@ -47,7 +47,7 @@ router.post('https://seefood2019.herokuapp.com/ingredients/update/:id', (req, re
 });
 
 // Route To Delete An Ingredient
-router.delete('https://seefood2019.herokuapp.com/ingredients/:id', (req, res) => {
+router.delete('/:id', (req, res) => {
     Ingredient.findByIdAndDelete(req.params.id)
         .then(() => res.json(`Removed ${req.body.ingredient} From Your Inventory!`))
         .catch(err => res.status(404).json(`Ingredient with ID: ${req.params.id} does not exist!`));
