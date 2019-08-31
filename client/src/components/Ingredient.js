@@ -52,6 +52,7 @@ class Ingredient extends Component {
                             <CardBody className="text-center">
                                 <CardTitle>{item.ingredient}</CardTitle>
                                 <CardTitle>{item.weight}</CardTitle>
+                                <hr />
                                 <CardTitle className={this.healthy(item) ? 'bg-success expires' : 'bg-danger expires'}>
                                     {this.getExpiryDate(item)}
                                 </CardTitle>
