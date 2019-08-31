@@ -20,18 +20,27 @@ class About extends Component {
                 <div className="row footer">
                     <div className="col-4 text-center">
                         <a href="https://github.com/shane-feng/seeFood">
-                            <img className="footer-icons" src="https://image.flaticon.com/icons/svg/25/25231.svg"></img>
+                            <img
+                                className="footer-icons"
+                                alt="git"
+                                src="https://image.flaticon.com/icons/svg/25/25231.svg"
+                            ></img>
                         </a>
                     </div>
                     <div className="col-4 text-center mb-0">
                         <a href="https://www.linkedin.com/in/shane-feng/">
-                            <img className="footer-icons" src="https://image.flaticon.com/icons/svg/34/34405.svg"></img>
+                            <img
+                                className="footer-icons"
+                                alt="linkedin"
+                                src="https://image.flaticon.com/icons/svg/34/34405.svg"
+                            ></img>
                         </a>
                     </div>
                     <div className="col-4 text-center">
                         <a href="mailto:sfeng14@my.bcit.ca">
                             <img
                                 className="footer-icons"
+                                alt="mail"
                                 src="https://www.flaticon.com/premium-icon/icons/svg/542/542689.svg"
                             ></img>
                         </a>

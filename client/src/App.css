@@ -62,8 +62,8 @@
 }
 
 hr {
-    margin-top: 0.1rem;
-    margin-bottom: 0.1rem;
+    margin-top: 0.1rem !important;
+    margin-bottom: 0.1rem !important;
 }
 
 /* Ingredient Input Values */
